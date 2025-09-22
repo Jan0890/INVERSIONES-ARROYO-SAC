@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inversiones & Edificaciones Arroyo SAC</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY==" crossorigin="" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Inversiones & Edificaciones<span>Arroyo SAC</span></h1>
+                    <p>Soluciones en Construccion</p>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                    <div class="nav-actions">
+                        <div class="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </div>
+                        <div class="menu-toggle">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Productos de Calidad para todo Tipo de Construccion</h2>
+                <p>En Inversiones & Edificaciones Arroyo SAC , nos Especializamos en La Fabricación e Instalación de Cercos Prefabricados de Concreto de Diferentes Diseños,Venta e Instalación de Piedra Laja,Fabricación e Instalación de Portones y Estructuras
+                    Metálicas, Construcción de Muros Y Pisos de Piedra, Construcción en Seco con Sistema Drywall, Construcciones y Acabados en General.</p>
+                <a href="#productos" class="btn">Ver productos</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/inicio1.gif" alt="ARROYO SAC" width="100%" height="300px">
+            </div>
+        </div>
+    </section>
+
+    <!-- Categorías -->
+    <section class="categories">
+        <div class="container">
+            <h2 class="section-title">Nuestras Categorías</h2>
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="todos">Todos</button>
+                <button class="filter-btn" data-category="concreto">Concreto</button>
+                <button class="filter-btn" data-category="piedra laja">Piedra Laja</button>
+                <button class="filter-btn" data-category="estructura metalica">Estructura Metalica</button>
+                <button class="filter-btn" data-category="drywall">Drywall</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos -->
+    <section id="productos" class="products">
+        <div class="container">
+            <h2 class="section-title">Nuestros Productos</h2>
+            <div class="products-grid" id="products-container">
+                <!-- Productos se cargarán dinámicamente desde JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosotros -->
+    <section id="nosotros" class="about">
+        <div class="container">
+            <div class="about-image">
+                <img src="images/historia.png" alt="Inversiones Arroyo">
+            </div>
+            <div class="about-content">
+                <h2 class="section-title">Nuestra Historia</h2>
+                <p>Inversiones & Edificaciones Arroyo SAC nació en 2018. Nuestra historia comienza con una visión clara: transformar espacios y construir proyectos que mejoren la calidad de vida de las personas en el Perú. Desde nuestros inicios, nos hemos
+                    comprometido en ofrecer soluciones de construcción innovadoras, sostenibles y de alta calidad, adaptadas a las necesidades de cada cliente. Cada proyecto que realizamos refleja nuestro compromiso con la excelencia, la seguridad y la
+                    confianza, valores que nos acompañan desde el primer día. Hoy seguimos creciendo, con la misma convicción que nos impulsó al inicio: construir no solo edificaciones, sino también relaciones sólidas y duraderas con nuestros clientes,
+                    colaboradores y comunidades.</p>
+                <p>Nuestro compromiso es con la calidad, el servicio al cliente y el desarrollo sostenible del sector de la Construccion.</p>
+                <div class="mission-vision">
+                    <div class="mission">
+                        <h3><i class="fas fa-bullseye"></i> Misión</h3>
+                        <p>Proveer productos de calidad que mejoren la productividad y el bienestar del cliente Final.</p>
+                    </div>
+                    <div class="vision">
+                        <h3><i class="fas fa-eye"></i> Visión</h3>
+                        <p>Ser líderes en innovación y servicio en el sector Constructivo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Los Servicios y Materiales de Inversiones & Edificaciones Arroyo SAC, Han sido de las mejores , Muy Responsables y profesionales. Excelente calidad y precios competitivos, Los Recomiendo.</p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Juan Pérez">
+                        <h4>Juan Pérez</h4>
+                        <p>Contratista Privado</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Son los Mejores en su Rubro, Cumplen con lo acordado, y entregan los trabajos en las fechas pactadas,sin duda son la mejor Opcion.</p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="María Gómez">
+                        <h4>María Gómez</h4>
+                        <p>Asesora de Ventas</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>Tienen Productos de Excelente Calidad,Productos cumplen con los Estandares de Calidad ,Gran servicio postventa.</p>
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Carlos Rojas">
+                        <h4>Carlos Rojas</h4>
+                        <p>Ingeniero en Cosapi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <h2 class="section-title">Contáctanos</h2>
+    <div id="map"></div>
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Calle los Pinos S/N,La Huaca-Mala-Cańete</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+51920877163</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>inversionesarroyo@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Lunes a Viernes: 8:00 AM - 6:00 PM</p>
+                        <p>Sábados: 8:00 AM - 2:00 PM</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Nombre completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Teléfono">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="Tu mensaje" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo">
+                        <h3>Inversiones & Edificaciones<span>Arroyo SAC</span></h3>
+                        <p>Soluciones Constructivas de calidad</p>
+                    </div>
+                    <p>Líderes en productos para la Construccion desde 2018.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Categorías</h4>
+                    <ul>
+                        <li><a href="#" data-category="concreto">Concreto</a></li>
+                        <li><a href="#" data-category="piedra laja">Piedra Laja</a></li>
+                        <li><a href="#" data-category="estructura metalica">Estructura Metalica</a></li>
+                        <li><a href="#" data-category="drywall">Drywall</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Suscríbete</h4>
+                    <p>Recibe ofertas y novedades en tu correo.</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Tu correo electrónico">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Inversiones & Edif. Arroyo SAC. Todos los derechos reservados.</p>
+                <div class="footer-links">
+                    <a href="#">Términos y condiciones</a>
+                    <a href="#">Política de privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/51920877163?text=Hola,Inversiones Arroyo%20estoy%20interesado%20en%20comprar%20productos%20%20" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Carrito de compras -->
+    <div class="cart-overlay"></div>
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Tu Carrito</h3>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <!-- Los productos del carrito se cargarán aquí -->
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <h4>Total:</h4>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button class="btn checkout-btn">Proceder al pago</button>
+            <button class="btn clear-cart">Vaciar carrito</button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <script src="db.js"></script>
+    <script src="script.js"></script>
+    <script src="contacto.js"></script>
+</body>
+
+</html>
