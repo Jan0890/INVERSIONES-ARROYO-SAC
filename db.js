@@ -3,15 +3,15 @@ const productos = [{
         id: 1,
         nombre: 'Cerco Prefabricado de Concreto',
         precio: 130.99,
-        descripcion: 'Cerco Prefabricado de 2.50 mt y 3.0 mt de altura, diseńo a elegir, placas de 2mt de ancho x 0.50 de ancho y 3.4 mm de espesor , Postes de 3.20 y 3.80 x 14x14, Ambos con Estructura de fierro Electrosoldada.',
+        descripcion: 'Cerco Prefabricado de 2.50 mt y 3.0 mt de altura, diseńo a elegir, placas de 2mt de ancho x 0.50 de alto y 3.4 mm de espesor , Postes de 3.20 y 3.80 x 14x14, Ambos con Estructura de fierro Electrosoldada.',
         categoria: 'concreto',
         imagen: 'images/cerco1.png'
     },
     {
         id: 2,
-        nombre: 'Instalacion de piedra Alaja',
+        nombre: 'Instalación de Piedra Laja',
         precio: 200,
-        descripcion: 'Instalacion de Piedra alaja decorativa, acabado de acuerdo al gusto del cliente.',
+        descripcion: 'Instalación de Piedra laja decorativa, acabado de acuerdo al gusto del cliente.',
         categoria: 'piedra laja',
         imagen: 'images/laja.png'
     },
@@ -26,16 +26,16 @@ const productos = [{
     {
         id: 4,
         nombre: 'Cerco a 45 Grados (Cuello de Caballo)',
-        precio: 8.99,
-        descripcion: 'Cerco Prefabricado de Concreto a 45 Grados, para Instalacion de Cerco Electrico.',
+        precio: 250,
+        descripcion: 'Cerco Prefabricado de Concreto a 45 Grados, para Instalación de Cerco Eléctrico.',
         categoria: 'concreto',
         imagen: 'images/cerco45.png'
     },
     {
         id: 5,
         nombre: 'Casas en Drywall',
-        precio: 22.40,
-        descripcion: 'Ahorra en Construccion en Seco con Sistema Drywall.',
+        precio: 20000,
+        descripcion: 'Ahorra en Construcción en Seco con Sistema Drywall.',
         categoria: 'drywall',
         imagen: 'images/casad.png'
     }
@@ -72,5 +72,6 @@ const productos = [{
         categoria: 'concentrado',
         imagen: 'https://images.pexels.com/photos/17064389/pexels-photo-17064389.jpeg'
     }
+
 
 ];*/
