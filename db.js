@@ -19,8 +19,8 @@ const productos = [{
         id: 3,
         nombre: 'Portones de Acero Galvanizado',
         precio: 4000,
-        descripcion: 'Fabricacion de Porticos con Acero Galvanizado, diseńos variados, según requerimiento.',
-        categoria: 'estructura metalica',
+        descripcion: 'Fabricación de Porticos con Acero Galvanizado, diseńos variados, según requerimiento.',
+        categoria: 'estructura metálica',
         imagen: 'images/porton1.png'
     },
     {
@@ -75,5 +75,6 @@ const productos = [{
 
 
 ];*/
+
 
 
